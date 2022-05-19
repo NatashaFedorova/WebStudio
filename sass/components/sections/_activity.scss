@@ -1,0 +1,30 @@
+.activity__title {
+  margin-bottom: 50px;
+}
+.activity__list {
+  display: flex;
+}
+.activity__item:not(:last-child) {
+  margin-right: var(--main-gap);
+}
+.activity__thumb {
+  position: relative;
+}
+.activity__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 70px;
+  @include font(700, 14px, 1.14, 0.03em);
+
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--light-color);
+  background: var(--activity-bg-text-thumb);
+}

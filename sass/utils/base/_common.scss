@@ -1,0 +1,15 @@
+// общие стили на body...
+body {
+  background-color: var(--light-color);
+  color: var(--main-color);
+  font-family: var(--main-font-family);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.text {
+  color: var(--secondary-color);
+}
