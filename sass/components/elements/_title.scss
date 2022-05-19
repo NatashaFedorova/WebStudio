@@ -1,4 +1,8 @@
 .title {
-  @include font(null, 36px, 1.17, 0.03em);
   text-align: center;
+  @include font(null, 28px, 1.18, 0.03em);
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 36px, 1.17, null);
+  }
 }

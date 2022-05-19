@@ -1,10 +1,23 @@
 .filter__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-wrap: no-wrap;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
-.filter__item:not(:last-child) {
-  margin-right: 8px;
+.filter__item {
+  margin-bottom: 15px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 .filter__button {
   padding: 6px 22px;
@@ -29,22 +42,30 @@
   }
 }
 .exsample__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: calc(-1 * var(--main-gap));
-  margin-bottom: calc(-1 * var(--main-gap));
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-1 * var(--flex-gap));
+  }
 }
 .example__item {
-  flex-basis: calc(100% / 3 - var(--main-gap));
-  margin-right: var(--main-gap);
-  margin-bottom: var(--main-gap);
-
+  margin: var(--flex-gap);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% - 4 * var(--flex-gap) / 2);
+    margin: var(--flex-gap);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% - 6 * var(--flex-gap) / 3);
+    margin: var(--flex-gap);
   }
 }
 .example__top-thumb {
