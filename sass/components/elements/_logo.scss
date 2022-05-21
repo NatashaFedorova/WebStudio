@@ -1,8 +1,12 @@
 .logo {
   display: block;
   font-family: var(--logo-font-family);
-  @include font(700, 26px, 1.19, 0.03em);
+  @include font(700, 24px, 1.17, 0.03em);
   color: var(--accent-color);
+
+  @media screen and (min-wigth: 1200px) {
+    @include font(700, 26px, 1.19, 0.03em);
+  }
 
   &__dark-part {
     color: var(--dark-color);

@@ -14,49 +14,62 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>portfolio</title>
   </head>
-  <body>
-    <header class="page-header">
+  <body class="body">
+    <!-- <header class="page-header">
       <div class="container">
         <a class="page-header__logo logo logo--link" href="./index.html" lang="en"
           >Web<span class="logo__dark-part">Studio</span></a
         >
-        <nav class="nav">
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="nav__link link" href="./index.html">Студия</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link link--active" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-
-        <ul class="contacts-list list">
-          <li class="contacts-list__item">
-            <a
-              class="contacts-list__link link"
-              href="mailto:info@devstudio.com"
-              title="написать письмо"
-            >
-              <svg class="contacts-list__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
+        <button class="btn-menu-open" type="button">
+          <svg class="btn-menu-open__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="header-menu is-hidden">
+          <div class="header-menu_container">
+            <button class="btn-menu-close" type="button">
+              <svg class="btn-menu-close__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
               </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__link link" href="tel:+380961111111" title="позвонить"
-              ><svg class="contacts-list__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            </button>
+            <nav class="nav">
+              <ul class="nav__list list">
+                <li class="nav__item">
+                  <a class="nav__link link" href="./index.html">Студия</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link link link--active" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts-list list">
+              <li class="contacts-list__item">
+                <a
+                  class="contacts-list__link link"
+                  href="mailto:info@devstudio.com"
+                  title="написать письмо"
+                >
+                  <svg class="contacts-list__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-list__item">
+                <a class="contacts-list__link link" href="tel:+380961111111" title="позвонить"
+                  ><svg class="contacts-list__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="portfolio section">
         <div class="container">
@@ -388,5 +401,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mob_menu.js"></script>
   </body>
 </html>
