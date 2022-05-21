@@ -1,25 +1,43 @@
 .hero {
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  max-width: 480px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
   background-color: var(--bg-last-hero);
   background-image: linear-gradient(var(--bg-first-hero), var(--bg-first-hero)),
-    url(../../../images/bg/jpg/desktop/bg-hero-desktop@1x.jpg);
+    url(../../../images/bg/jpg/mobile/bg-hero-mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    background-image: linear-gradient(var(--bg-first-hero), var(--bg-first-hero)),
+      url(../../../images/bg/jpg/tablet/bg-hero-tab@1x.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(var(--bg-first-hero), var(--bg-first-hero)),
+      url(../../../images/bg/jpg/desktop/bg-hero-desktop@1x.jpg);
+  }
 }
 
 .hero__title {
-  margin-bottom: var(--main-gap);
-  max-width: 696px;
-  @include font(900, 44px, 1.36, 0.06em);
+  @include font(900, 24px, 1.62, 0.06em);
+  max-width: 360px;
   text-transform: uppercase;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   color: var(--light-color);
+  margin-bottom: var(--main-gap);
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 44px, 1.36, null);
+    max-width: 696px;
+  }
 }
 .hero__button {
   display: block;
