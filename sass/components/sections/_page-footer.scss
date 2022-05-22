@@ -61,7 +61,9 @@
     margin-bottom: 60px;
   }
 }
-.social__title {
+.address__item:not(:last-child) {
+}
+mb .social__title {
   margin-bottom: 20px;
   @include font(null, 14px, 14px, 0.03em);
   text-transform: uppercase;

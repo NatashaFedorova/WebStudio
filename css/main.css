@@ -597,6 +597,12 @@ body {
     color: var(--accent-color);
   }
 }
+@media screen and (min-width: 768px) {
+  .contacts-list__link {
+    display: flex;
+    align-items: center;
+  }
+}
 
 .contacts-list__icon {
   display: none;
@@ -1290,7 +1296,7 @@ body {
   }
 }
 
-.social__title {
+mb .social__title {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 14px;
