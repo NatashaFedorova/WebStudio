@@ -1272,7 +1272,7 @@ body {
 .address__item:first-child .address__link {
   color: var(--light-color);
 }
-.address__item:first-child .address__link:nth-child(-n+2) {
+.address__item:nth-child(-n+2) {
   margin-bottom: 8px;
 }
 @media screen and (min-width: 1200px) {
@@ -1296,7 +1296,7 @@ body {
   }
 }
 
-mb .social__title {
+.social__title {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 14px;
