@@ -187,6 +187,7 @@
   background-color: var(--light-color);
 
   @media screen and (max-width: 767px) {
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -197,10 +198,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 48px 40px;
-    opacity: 0;
     visibility: hidden;
     opacity: 0;
-    pointer-events: none;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
       opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -219,7 +218,7 @@
   }
 }
 .page-header_btn-menu {
-  z-index: 1;
+  z-index: 2;
   margin-top: 10px;
   margin-right: -5px;
   margin-left: auto;
