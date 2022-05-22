@@ -418,11 +418,6 @@ body {
 .logo__light-part {
   color: var(--light-color);
 }
-@media screen and (min-width: 767px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
 
 .button {
   font-weight: 700;
@@ -450,6 +445,12 @@ body {
 .page-header .container {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 767px) {
+  .page-header__logo {
+    margin-right: 88px;
+  }
 }
 
 .nav__link,
