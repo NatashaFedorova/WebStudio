@@ -155,37 +155,83 @@
           <ul class="activity__list list">
             <li class="activity__item">
               <div class="activity__thumb">
-                <img
-                  class="image"
-                  src="./images/section/activity/jpg/desktop/img-1-activity-@1x.jpg"
-                  alt="Разработчик верстает сайт с помощью компьютера, планшета, клавиатуры и заметок"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/section/activity/webp/desktop/img-1-activity-@1x.webp 1x,
+                      ./images/section/activity/webp/desktop/img-1-activity-@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/activity/jpg/desktop/img-1-activity-@1x.jpg 1x,
+                      ./images/section/activity/jpg/desktop/img-1-activity-@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image"
+                    src="./images/section/activity/jpg/desktop/img-1-activity-@1x.jpg"
+                    alt="Разработчик верстает сайт с помощью компьютера, планшета, клавиатуры и
+                  заметок"
+                  />
+                </picture>
                 <p class="activity__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="activity__item">
               <div class="activity__thumb">
-                <img
-                  class="image"
-                  src="./images/section/activity/jpg/desktop/img-2-activity-@1x.jpg"
-                  alt="Разработчик работает над разметкой сайта. Использует: смартфон, ноутбук, компьютер"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/section/activity/webp/desktop/img-2-activity-@1x.webp 1x,
+                      ./images/section/activity/webp/desktop/img-2-activity-@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/activity/jpg/desktop/img-2-activity-@1x.jpg 1x,
+                      ./images/section/activity/jpg/desktop/img-2-activity-@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image"
+                    src="./images/section/activity/jpg/desktop/img-2-activity-@1x.jpg"
+                    alt="Верстка сайта"
+                  />
+                </picture>
                 <p class="activity__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="activity__item">
               <div class="activity__thumb">
-                <img
-                  class="image"
-                  src="./images/section/activity/jpg/desktop/img-3-activity-@1x.jpg"
-                  alt="Цветовая палитра на планшете."
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/section/activity/webp/desktop/img-3-activity-@1x.webp 1x,
+                      ./images/section/activity/webp/desktop/img-3-activity-@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/activity/jpg/desktop/img-3-activity-@1x.jpg 1x,
+                      ./images/section/activity/jpg/desktop/img-3-activity-@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="image"
+                    src="./images/section/activity/jpg/desktop/img-3-activity-@1x.jpg"
+                    alt="Цветовая палитра на планшете"
+                  />
+                </picture>
                 <p class="activity__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -198,13 +244,58 @@
           <ul class="team__list list">
             <li class="team__item">
               <div class="team__thumb">
-                <img
-                  class="image"
-                  src="./images/section/team/jpg/desktop/img-1-desktop@1x.jpg"
-                  alt="Мужчина"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/section/team/webp/desktop/img-1-desktop@1x.webp 1x,
+                      ./images/section/team/webp/desktop/img-1-desktop@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/jpg/desktop/img-1-desktop@1x.jpg 1x,
+                      ./images/section/team/jpg/desktop/img-1-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/webp/tablet/img-1-tab@1x.webp 1x,
+                      ./images/section/team/webp/tablet/img-1-tab@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/jpg/tablet/img-1-tab@1x.jpg 1x,
+                      ./images/section/team/jpg/tablet/img-1-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/webp/mobile/img-1-mob@1x.webp 1x,
+                      ./images/section/team/webp/mobile/img-1-mob@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/jpg/mobile/img-1-mob@1x.jpg 1x,
+                      ./images/section/team/jpg/mobile/img-1-mob@2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="image"
+                    src="./images/section/team/jpg/desktop/img-1-desktop@1x.jpg"
+                    alt="Мужчина"
+                  />
+                </picture>
               </div>
               <div class="team__data">
                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -243,13 +334,58 @@
             </li>
             <li class="team__item">
               <div class="team__thumb">
-                <img
-                  class="image"
-                  src="./images/section/team/jpg/desktop/img-2-desktop@1x.jpg"
-                  alt="Женищина"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/section/team/webp/desktop/img-2-desktop@1x.webp 1x,
+                      ./images/section/team/webp/desktop/img-2-desktop@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/jpg/desktop/img-2-desktop@1x.jpg 1x,
+                      ./images/section/team/jpg/desktop/img-2-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/webp/tablet/img-2-tab@1x.webp 1x,
+                      ./images/section/team/webp/tablet/img-2-tab@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/jpg/tablet/img-2-tab@1x.jpg 1x,
+                      ./images/section/team/jpg/tablet/img-2-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/webp/mobile/img-2-mob@1x.webp 1x,
+                      ./images/section/team/webp/mobile/img-2-mob@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/jpg/mobile/img-2-mob@1x.jpg 1x,
+                      ./images/section/team/jpg/mobile/img-2-mob@2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="image"
+                    src="./images/section/team/jpg/desktop/img-2-desktop@1x.jpg"
+                    alt="Мужчина"
+                  />
+                </picture>
               </div>
               <div class="team__data">
                 <h3 class="team__name">Ольга Репина</h3>
@@ -288,13 +424,58 @@
             </li>
             <li class="team__item">
               <div class="team__thumb">
-                <img
-                  class="image"
-                  src="./images/section/team/jpg/desktop/img-3-desktop@1x.jpg"
-                  alt="Мужчина"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/section/team/webp/desktop/img-3-desktop@1x.webp 1x,
+                      ./images/section/team/webp/desktop/img-3-desktop@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/jpg/desktop/img-3-desktop@1x.jpg 1x,
+                      ./images/section/team/jpg/desktop/img-3-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/webp/tablet/img-3-tab@1x.webp 1x,
+                      ./images/section/team/webp/tablet/img-3-tab@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/jpg/tablet/img-3-tab@1x.jpg 1x,
+                      ./images/section/team/jpg/tablet/img-3-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/webp/mobile/img-3-mob@1x.webp 1x,
+                      ./images/section/team/webp/mobile/img-3-mob@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/jpg/mobile/img-3-mob@1x.jpg 1x,
+                      ./images/section/team/jpg/mobile/img-3-mob@2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="image"
+                    src="./images/section/team/jpg/desktop/img-3-desktop@1x.jpg"
+                    alt="Мужчина"
+                  />
+                </picture>
               </div>
               <div class="team__data">
                 <h3 class="team__name">Николай Тарасов</h3>
@@ -333,13 +514,58 @@
             </li>
             <li class="team__item">
               <div class="team__thumb">
-                <img
-                  class="image"
-                  src="./images/section/team/jpg/desktop/img-4-desktop@1x.jpg"
-                  alt="Мужчина"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/section/team/webp/desktop/img-4-desktop@1x.webp 1x,
+                      ./images/section/team/webp/desktop/img-4-desktop@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/jpg/desktop/img-4-desktop@1x.jpg 1x,
+                      ./images/section/team/jpg/desktop/img-4-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/webp/tablet/img-4-tab@1x.webp 1x,
+                      ./images/section/team/webp/tablet/img-4-tab@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/jpg/tablet/img-4-tab@1x.jpg 1x,
+                      ./images/section/team/jpg/tablet/img-4-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/webp/mobile/img-4-mob@1x.webp 1x,
+                      ./images/section/team/webp/mobile/img-4-mob@2x.webp 2x
+                    "
+                    type="image/werb"
+                    media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/section/team/jpg/mobile/img-4-mob@1x.jpg 1x,
+                      ./images/section/team/jpg/mobile/img-4-mob@2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="image"
+                    src="./images/section/team/jpg/desktop/img-4-desktop@1x.jpg"
+                    alt="Мужчина"
+                  />
+                </picture>
               </div>
               <div class="team__data">
                 <h3 class="team__name">Михаил Ермаков</h3>

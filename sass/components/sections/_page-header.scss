@@ -1,8 +1,5 @@
 .page-header {
-  background-color: red;
   position: relative;
-  // padding-top: 10px;
-  // padding-bottom: 10px;
   border-bottom: 1px solid var(--border-header-color);
 
   .container {
@@ -10,6 +7,7 @@
     align-items: center;
   }
 }
+
 .nav__link,
 .contacts-list__link {
   display: block;
@@ -22,10 +20,20 @@
     fill: currentColor;
   }
 }
+.nav__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .nav__item {
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 32px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 50px;
     }
   }
   @media screen and (max-width: 767px) {
@@ -43,6 +51,8 @@
     color: var(--accent-color);
   }
   @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
     position: relative;
     color: var(--accent-color);
 
@@ -62,6 +72,14 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 64px;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 .contacts-list__item {
   &:not(:last-child) {
@@ -72,6 +90,7 @@
   &:first-child {
     @media screen and (max-width: 767px) {
       @include font(500, 40px, 1.16, 0.02em);
+      margin-bottom: 30px;
     }
   }
   @media screen and (max-width: 767px) {
@@ -79,8 +98,20 @@
   }
   @media screen and (min-width: 767px) {
     @include font(500, 14px, 1.14, 0.02em);
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:last-child {
+      margin-bottom: 0;
+      margin-right: 50px;
+    }
+    display: flex;
+    align-items: center;
   }
 }
+
 .contacts-list__link {
   color: var(--secondary-color);
   .contacts-list__item:first-child & {
@@ -154,32 +185,39 @@
 // header-menu-mobile=============================
 .page-header_menu {
   background-color: var(--light-color);
+
   @media screen and (max-width: 767px) {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    transform: translateX(100%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 48px 40px;
-    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      display 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-open {
       transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
     }
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-grow: 1;
   }
 }
-
 .page-header_btn-menu {
   z-index: 1;
   margin-top: 10px;

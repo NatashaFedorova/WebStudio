@@ -103,10 +103,7 @@
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--light-color);
-
-  @media screen and (max-width: 1200px) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 .subscription__form {
   @media screen and (min-width: 1200px) {
