@@ -6,7 +6,6 @@
   .container {
     @media screen and (min-width: 768px) {
       display: flex;
-      align-items: baseline;
     }
     @media screen and (min-width: 768px) and(max-width: 1199px) {
       justify-content: center;
@@ -14,7 +13,6 @@
     }
     @media screen and (max-width: 1199px) {
       text-align: center;
-      align-items: baseline;
     }
   }
 }
