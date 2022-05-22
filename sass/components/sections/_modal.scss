@@ -38,20 +38,27 @@
     width: 95vw;
   }
   @media screen and (min-width: 480px) {
+    left: 15px;
     width: 450px;
   }
   @media screen and (min-width: 768px) {
-    left: 50%;
+    left: 159px;
+    top: 208px;
+
+    .backdrop.is-hidden & {
+      transform: scale(1.1);
+    }
+  }
+  @media screen and (min-width: 1200px) {
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    width: 528px;
+    min-height: 581px;
 
     .backdrop.is-hidden & {
       transform: translate(-50%, -50%) scale(1.1);
     }
-  }
-  @media screen and (min-width: 1200px) {
-    width: 528px;
-    min-height: 581px;
   }
 }
 
