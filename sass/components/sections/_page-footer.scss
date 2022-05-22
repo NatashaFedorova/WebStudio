@@ -8,7 +8,7 @@
       display: flex;
     }
     @media screen and (min-width: 768px) and(max-width: 1199px) {
-      justify-content: center;
+      justify-content: space-around;
       flex-wrap: wrap;
     }
     @media screen and (max-width: 1199px) {
@@ -20,13 +20,10 @@
 // contacts =================================
 
 .footer__contacts {
-  @media screen and (min-width: 768px) {
-    margin-right: 165px;
-  }
-
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
