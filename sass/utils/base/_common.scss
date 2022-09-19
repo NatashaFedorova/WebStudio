@@ -1,8 +1,13 @@
 // общие стили на body...
 body {
+  height: 100vh;
   background-color: var(--light-color);
   color: var(--main-color);
   font-family: var(--main-font-family);
+  overflow-x: hidden;
+  flex-flow: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .section {
@@ -17,4 +22,8 @@ body {
 
 .text {
   color: var(--secondary-color);
+}
+
+main {
+  flex-grow: 3;
 }

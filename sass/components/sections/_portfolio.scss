@@ -129,3 +129,7 @@
   @include font(null, null, 1.88, 0.03em);
   color: var(--secondary-color);
 }
+
+.example__item.is-hidden {
+  display: none;
+}

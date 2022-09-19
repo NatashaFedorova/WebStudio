@@ -97,23 +97,31 @@
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="filter__list list">
             <li class="filter__item">
-              <button class="filter__button button" type="button">Все</button>
+              <button class="filter__button button" type="button" data-filter="all">Все</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button button" type="button">Веб-сайты</button>
+              <button class="filter__button button" type="button" data-filter="websites">
+                Веб-сайты
+              </button>
             </li>
             <li class="filter__item">
-              <button class="filter__button button" type="button">Приложения</button>
+              <button class="filter__button button" type="button" data-filter="appendix">
+                Приложения
+              </button>
             </li>
             <li class="filter__item">
-              <button class="filter__button button" type="button">Дизайн</button>
+              <button class="filter__button button" type="button" data-filter="design">
+                Дизайн
+              </button>
             </li>
             <li class="filter__item">
-              <button class="filter__button button" type="button">Маркетинг</button>
+              <button class="filter__button button" type="button" data-filter="marketing">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <ul class="exsample__list list">
-            <li class="example__item">
+            <li class="example__item" data-type="websites">
               <a class="example__link link" href="./portfolio.html">
                 <div class="example__top-thumb">
                   <picture>
@@ -182,7 +190,7 @@
                 </div>
               </a>
             </li>
-            <li class="example__item">
+            <li class="example__item" data-type="design">
               <a class="example__link link" href="./portfolio.html">
                 <div class="example__top-thumb">
                   <picture>
@@ -253,7 +261,7 @@
                 </div>
               </a>
             </li>
-            <li class="example__item">
+            <li class="example__item" data-type="appendix">
               <a class="example__link link" href="./portfolio.html">
                 <div class="example__top-thumb">
                   <picture>
@@ -322,7 +330,7 @@
                 </div></a
               >
             </li>
-            <li class="example__item">
+            <li class="example__item" data-type="marketing">
               <a class="example__link link" href="./portfolio.html">
                 <div class="example__top-thumb">
                   <picture>
@@ -391,7 +399,7 @@
                 </div></a
               >
             </li>
-            <li class="example__item">
+            <li class="example__item" data-type="appendix">
               <a class="example__link link" href="./portfolio.html"
                 ><div class="example__top-thumb">
                   <picture>
@@ -460,7 +468,7 @@
                 </div></a
               >
             </li>
-            <li class="example__item">
+            <li class="example__item" data-type="websites">
               <a class="example__link link" href="./portfolio.html"
                 ><div class="example__top-thumb">
                   <picture>
@@ -529,7 +537,7 @@
                 </div></a
               >
             </li>
-            <li class="example__item">
+            <li class="example__item" data-type="design">
               <a class="example__link link" href="./portfolio.html">
                 <div class="example__top-thumb">
                   <picture>
@@ -600,7 +608,7 @@
                 </div></a
               >
             </li>
-            <li class="example__item">
+            <li class="example__item" data-type="marketing">
               <a class="example__link link" href="./portfolio.html"
                 ><div class="example__top-thumb">
                   <picture>
@@ -671,7 +679,7 @@
                 </div></a
               >
             </li>
-            <li class="example__item">
+            <li class="example__item" data-type="appendix">
               <a class="example__link link" href="./portfolio.html"
                 ><div class="example__top-thumb">
                   <picture>
@@ -751,7 +759,7 @@
             >Web<span class="logo__light-part">Studio</span></a
           >
           <address class="footer__address address">
-            <ul class="address__list">
+            <ul class="address__list list">
               <li class="address__item">
                 <a
                   class="address__link link"
@@ -827,6 +835,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/filter.js"></script>
     <script src="./js/header-menu.js"></script>
   </body>
 </html>
